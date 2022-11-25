@@ -1,0 +1,11 @@
+kafka-consumer-groups.sh --bootstrap-server de-cicd4-kafka-vm-0:9092 --group  notification-service-dlt --describe | grep smoketest4.datafabric.storage.completed.event.DLT
+
+kafka-consumer-groups.sh --bootstrap-server de-cicd4-kafka-vm-0:9092 --group  notification-service-dlt --describe | grep smoketest4.datafabric.storage.DLT
+
+kafka-consumer-groups.sh --bootstrap-server de-cicd4-kafka-vm-0:9092 --group  notification-service-dlt --describe | grep smoketest4.datafabric.wfm.internal.event.DLT
+
+
+kafka-consumer-groups.sh --bootstrap-server de-cicd4-kafka-vm-0:9092 --group  notification-service-dlt --describe | grep smoketest4.datafabric.wfm.internal.event.advisories
+
+
+kafka-consumer-groups.sh --bootstrap-server de-cicd4-kafka-vm-0:9092 --group  notification-service-dlt --describe | grep smoketest4.datafabric.common.DLT
